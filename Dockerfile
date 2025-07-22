@@ -1,11 +1,7 @@
-# Start from the official LiveKit server image
 FROM livekit/livekit-server:v1.9.0
 
-# Copy your config file
 COPY livekit.yaml /etc/livekit.yaml
 
-# Expose the default port
-EXPOSE 7880
+RUN echo "=== DEBUG: Contents of /etc/livekit.yaml ===" && cat /etc/livekit.yaml
 
-# Run the LiveKit server with your config
 CMD ["livekit-server", "--config", "/etc/livekit.yaml"]
