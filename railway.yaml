@@ -1,0 +1,9 @@
+# railway.yaml
+services:
+  - name: livekit-server
+    dockerfilePath: Dockerfile
+    startCommand: livekit-server --config /etc/livekit.yaml
+    envVars:
+      - fromDotEnv: true
+    healthCheckPath: /
+    healthCheckPort: 7880
