@@ -5,8 +5,7 @@ rtc:
   udp_port: 7882
 
 keys:
-LIVEKIT_API_KEY: livekit_app_79dca2f8
-LIVEKIT_API_SECRET: 0ff1e3bc489d452d9a5f1b6e38f7a819f473c6762a11d1e95d65b5c9e733df44
+livekit_app_79dca2f8: 0ff1e3bc489d452d9a5f1b6e38f7a819f473c6762a11d1e95d65b5c9e733df44
 
 redis:
   address: redis:6379
